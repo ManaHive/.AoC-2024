@@ -12,7 +12,7 @@ with open(f'day{DAY}/test_input.txt') as i:
     test_nl = i.readlines()
 test= np.array([l.strip('\n\r') for l in test_nl])
 
-curr = test.copy()
+curr = input.copy()
 start_time = time.time()
 #----------------------------------------
 # PART 1:
@@ -24,6 +24,7 @@ start_time = time.time()
 # PART 2:
 # one single bad level is ok
 
+# PART 1 SOLUTION
 num_of_safe = 0
 for l in curr:
     # creating a list of report nums from the report string line
