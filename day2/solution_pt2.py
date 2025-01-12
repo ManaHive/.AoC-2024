@@ -25,6 +25,7 @@ start_time = time.time()
 # one single bad level is ok
 
 # PART 2 SOLUTION
+# function for evaluating the list of report nums
 def eval(report_nums):
     print(report_nums)
     increasingFlag = False
@@ -51,6 +52,7 @@ for l in curr:
     # creating a list of report nums from the report string line
     successFlag = False
     report_nums = [int(num) for num in l.split(" ")]
+    # evaluate full list for first time, then evaluate the list with one of each num removed
     if eval(report_nums) != -1:
         for n in range(len(report_nums)):
             curr = report_nums.copy()
