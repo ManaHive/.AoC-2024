@@ -1,7 +1,7 @@
 import time
 import numpy as np
 
-DAY = 0
+DAY = 7
 with open(f'day{DAY}/input.txt') as i:
     input_nl = i.readlines()
 input = np.array([list(l.strip('\n\r')) for l in input_nl])

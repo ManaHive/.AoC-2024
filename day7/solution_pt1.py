@@ -1,7 +1,8 @@
 import time
 import numpy as np
+import itertools
 
-DAY = 0
+DAY = 7
 with open(f'day{DAY}/input.txt') as i:
     input_nl = i.readlines()
 input = np.array([list(l.strip('\n\r')) for l in input_nl])
@@ -12,6 +13,6 @@ test= np.array([list(l.strip('\n\r')) for l in test_nl])
 curr = input.copy()
 start_time = time.time()
 #----------------------------------------
-# PART 1:
+# PART 1: use itertools product
 
 print(f"Execution time: {time.time() - start_time} seconds")
