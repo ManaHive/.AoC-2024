@@ -4,11 +4,10 @@ import numpy as np
 DAY = 0
 with open(f'day{DAY}/input.txt') as i:
     input_nl = i.readlines()
-input = np.array([list(l.strip('\n\r')) for l in input_nl])
+input = np.array([l.strip('\n\r') for l in input_nl])
 with open(f'day{DAY}/test_input.txt') as i:
     test_nl = i.readlines()
-test= np.array([list(l.strip('\n\r')) for l in test_nl])
-
+test= np.array([l.strip('\n\r') for l in test_nl])
 curr = input.copy()
 start_time = time.time()
 #----------------------------------------
